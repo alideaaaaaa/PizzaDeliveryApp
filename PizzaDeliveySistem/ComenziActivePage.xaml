@@ -1,0 +1,90 @@
+﻿<Page x:Class="PizzaDeliveySistem.ComenziActivePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PizzaDeliveySistem"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="900"
+      Title="ComenziActivePage">
+    <ScrollViewer VerticalScrollBarVisibility="Visible">
+        <Grid Background="Bisque" Height="500" Width="900">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="350"/>
+                <ColumnDefinition Width="550"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="80"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Content="Cos de cumparaturi" FontFamily="Arial" 
+        FontSize="25" Foreground="#FF805810"  FontWeight="Bold" VerticalAlignment="Center"/>
+            <DataGrid Grid.Row="1" Grid.Column="0" Margin="20" Background="White" 
+                  FontFamily="Arial" FontSize="20" x:Name="dataGridCos" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Tip" Binding="{Binding TipItem}" Width="*" />
+                    <DataGridTextColumn Header="Cantitate" Binding="{Binding CantitateItem}" Width="*" />
+
+                </DataGrid.Columns>
+            </DataGrid>
+            <Grid Grid.Row="3" Grid.Column="0" Margin="20,0,20,20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" Margin="10" Content="Sterge" FontSize="15" FontFamily="Arial" Background="#FF805820" 
+Foreground="#FFEEECF3" Click="Button_Click" />
+                <Button Grid.Column="1" Margin="10" Content="Salveaza" FontSize="15" FontFamily="Arial" Background="#FF805820" 
+ Foreground="#FFEEECF3" Click="Button_Click_1"/>
+                <Button Grid.Column="2" Margin="10" Content="Comanda" FontSize="15" FontFamily="Arial" Background="#FF805820" 
+Foreground="#FFEEECF3" Click="Button_Click_2"/>
+            </Grid>
+            <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" Margin="10" Content="Total" FontFamily="Arial" 
+        FontSize="25" Foreground="#FF805810"  FontWeight="Bold" VerticalAlignment="Center"/>
+                <Label Grid.Column="1" Margin="10" FontFamily="Arial" FontSize="25" Foreground="#FF805810"  
+                       FontWeight="Bold" VerticalAlignment="Center" Name="labelTotal"/>
+            </Grid>
+            <Label Grid.Row="0" Grid.Column="1" Content="Comenzi" FontFamily="Arial" 
+        FontSize="25" Foreground="#FF805810"  FontWeight="Bold" VerticalAlignment="Center"/>
+            <DataGrid Grid.Row="1" Grid.Column="1" Margin="20" Background="White" 
+       FontFamily="Arial" FontSize="20" x:Name="dataGridComenzi" AutoGenerateColumns="True" IsReadOnly="True"/>
+
+            <Grid Grid.Row="2" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <ComboBox Grid.Column="0" Margin="10,20" SelectionChanged="ComboBox_SelectionChanged" Name="comboBox"/>
+                <DatePicker Grid.Column="1" Margin="10,20" Name="dateTimePicker1"/>
+
+                <DatePicker Grid.Column="2" Margin="10,20" Name="dateTimePiker2"/>
+            </Grid>
+
+            <Grid Grid.Row="3" Grid.Column="1" Margin="20,0,20,20">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" Margin="10" Content="Cauta dupa filtre" FontSize="15" FontFamily="Arial" Background="#FF805820" 
+Foreground="#FFEEECF3" Click="Button_Click_3"/>
+                <Button Grid.Column="1" Margin="10" Content="Sorteaza dupa data" FontSize="15" FontFamily="Arial" Background="#FF805820" 
+ Foreground="#FFEEECF3" Click="Button_Click_4" />
+                <Button Grid.Column="2" Margin="10" Content="Anuleaza comanda" FontSize="15" FontFamily="Arial" Background="#FF805820" 
+Foreground="#FFEEECF3" Click="Button_Click_5" />
+                </Grid>
+
+
+
+        </Grid>
+    </ScrollViewer>
+</Page>

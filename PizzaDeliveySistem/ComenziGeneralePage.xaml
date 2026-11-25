@@ -1,0 +1,74 @@
+﻿<Page x:Class="PizzaDeliveySistem.ComenziGeneralePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PizzaDeliveySistem"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="900"
+      Title="ComenziGeneralePage">
+
+        <Grid Background="Bisque" Height="450" Width="900">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="300"/>
+            </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="70"/>
+            </Grid.RowDefinitions>
+            <DataGrid Grid.Row="0" Margin="20" FontFamily="Arial" FontSize="20" AutoGenerateColumns="True" Name="dataGrid">
+            </DataGrid>
+            <Button Grid.Row="1" Margin="15,20" Content="Modifica" FontSize="15" FontFamily="Arial" Background="#FF805820" 
+                Foreground="#FFEEECF3" Click="Button_Click_3"/>
+        </Grid>
+        <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                
+                </Grid.RowDefinitions>
+                <TextBox Grid.Row="0" Margin="10,15" FontFamily="Arial" FontSize="20" Name="textBoxCautare" TextChanged="textBox_TextChanged"/>
+                <ComboBox Grid.Row="1" Margin="10,15" Name="comboBox2" SelectionChanged="comboBox2_SelectionChanged"/>
+            </Grid>
+            <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <DatePicker Grid.Column="0" Margin="10,30" Name="dateTime1"/>
+                    <DatePicker Grid.Column="1" Margin="10,30" Name="dateTime2"/>
+                </Grid>
+                <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" Margin="15,20" Content="Resetare filtre" FontSize="15" FontFamily="Arial" Background="#FF805820" 
+                Foreground="#FFEEECF3" Click="Button_Click" />
+                    <Button Grid.Column="1" Margin="15,20" Content="Cauta" FontSize="15" FontFamily="Arial" Background="#FF805820" 
+Foreground="#FFEEECF3" Click="Button_Click_1" />
+                </Grid>
+                <Grid Grid.Row="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <ComboBox Grid.Column="0" Margin="15,40" FontSize="15" FontFamily="Arial" Name="comboBox" />
+                    <Button Grid.Column="1" Margin="15,20" Content="Ordoneaza" FontSize="15" FontFamily="Arial" Background="#FF805820" 
+Foreground="#FFEEECF3" Click="Button_Click_2" />
+                </Grid>
+            </Grid>
+        </Grid>
+    </Page>
+
+

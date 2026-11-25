@@ -1,0 +1,97 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="PozePizza\capriciosa.jpg" />
+    <None Remove="PozePizza\capriciosaGRID.jpg" />
+    <None Remove="PozePizza\crudo.jpg" />
+    <None Remove="PozePizza\crudoGRID.jpg" />
+    <None Remove="PozePizza\margeritaGRID.jpg" />
+    <None Remove="PozePizza\mortadellaGRID.jpg" />
+    <None Remove="PozePizza\napoletanaGRID.jpg" />
+    <None Remove="PozePizza\peperoni.jpg" />
+    <None Remove="PozePizza\peperoniGRID.jpg" />
+    <None Remove="PozePizza\Pesto.jpg" />
+    <None Remove="PozePizza\pestoGRID.jpg" />
+    <None Remove="PozePizza\PizzaDelivery.jpg" />
+    <None Remove="PozePizza\pizzaMargerita.jpg" />
+    <None Remove="PozePizza\pizzaMortadellaburatta.jpg" />
+    <None Remove="PozePizza\pizzaNapoletana.jpg" />
+    <None Remove="PozePizza\pizzaQuattroformaggi.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="PozePizza\peperoniGRID.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="PozePizza\napoletanaGRID.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LiveChartsCore.SkiaSharpView.WPF" Version="2.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="10.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="PozePizza\capriciosa.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="PozePizza\capriciosaGRID.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="PozePizza\crudo.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="PozePizza\crudoGRID.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="PozePizza\margeritaGRID.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="PozePizza\mortadellaGRID.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="PozePizza\peperoni.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="PozePizza\Pesto.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="PozePizza\pestoGRID.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="PozePizza\PizzaDelivery.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="PozePizza\pizzaMargerita.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="PozePizza\pizzaMortadellaburatta.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="PozePizza\pizzaNapoletana.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="PozePizza\pizzaQuattroformaggi.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>

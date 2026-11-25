@@ -1,0 +1,19 @@
+﻿<Window x:Class="PizzaDeliveySistem.WindowMesaj"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PizzaDeliveySistem"
+        mc:Ignorable="d"
+        Title="WindowMesaj" Height="400" Width="500">
+    <Grid Background="Bisque">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <TextBox Name="textBoxMesaj" Margin="20" FontFamily="Arial" FontSize="18"/>
+        <Button Grid.Row="1"  Margin="150,20" Content="Trimite" FontSize="20" FontFamily="Arial" Background="#FF805820" 
+    Foreground="#FFEEECF3" Click="Button_Click" />
+
+    </Grid>
+</Window>

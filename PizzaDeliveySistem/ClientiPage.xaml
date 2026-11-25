@@ -1,0 +1,43 @@
+﻿<Page x:Class="PizzaDeliveySistem.ClientiPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PizzaDeliveySistem"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="900"
+      Title="ClientiPage">
+
+    <Grid Background="Bisque" Width="900" Height="450">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <Grid  Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TreeView Margin="20" FontFamily="Arial" FontSize="20" Name="treeNodUser" Foreground="#FF805810" Width="200"
+                      SelectedItemChanged="treeNodUser_SelectedItemChanged" MouseDoubleClick="treeNodUser_MouseDoubleClick"/>
+            <DataGrid Grid.Column="1" Margin="20" Name="dataGridView" FontSize="15" IsReadOnly="True">
+
+            </DataGrid>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="175"/>
+                <ColumnDefinition Width="175"/>
+
+
+            </Grid.ColumnDefinitions>
+           
+            <Button Grid.Column="1" Margin="15,20" Content="Trmite mesaj" FontSize="15" FontFamily="Arial" Background="#FF805820" 
+            Foreground="#FFEEECF3" Click="Button_Click_2" />
+            <TextBox Grid.Column="2" Name="textBoxCautare" Margin="10,35" FontSize="10" TextChanged="textBoxCautare_TextChanged"/>
+            <ComboBox Grid.Column="3" Name="comboBox" Margin="10,35" SelectionChanged="comboBox_SelectionChanged"/>
+        </Grid>
+    </Grid>
+</Page>

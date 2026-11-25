@@ -1,0 +1,87 @@
+﻿<Page x:Class="PizzaDeliveySistem.PageProduse"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PizzaDeliveySistem"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="900"
+      Title="PageProduse">
+
+    <Grid Background="Bisque" Width="900" Height="450">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="500"/>
+                <ColumnDefinition Width="400"/>
+            </Grid.ColumnDefinitions>
+       
+        <DataGrid Grid.Column="0" Margin="30" Name="dataGridProduse"/>
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="70"/>
+                    <RowDefinition Height="70"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <TextBox Margin="20" Name="textBoxCautare" FontFamily="Arial" FontSize="17" TextChanged="textBox_TextChanged"/>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <ComboBox Grid.Column="0" Margin="20" FontSize="15" FontFamily="Arial" Name="comboBox" />
+                    <Button Grid.Column="1" Margin="15,10" Content="Ordoneaza" FontSize="15" FontFamily="Arial" Background="#FF805820" 
+Foreground="#FFEEECF3" Click="Button_Click_4" />
+                    
+                </Grid>
+                <Grid Grid.Row="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" Margin="30" Content="Resetare filtre" FontSize="15" FontFamily="Arial" Background="#FF805820" 
+                Foreground="#FFEEECF3" Click="Button_Click_5" />
+                    <Button Grid.Column="1" Margin="30" Content="Cauta" FontSize="15" FontFamily="Arial" Background="#FF805820" 
+Foreground="#FFEEECF3" Click="Button_Click_6" />
+                </Grid>
+                <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Column="0" Grid.Row="0" Content="Pret minim" Foreground="#FF805820" FontSize="20" FontWeight="Bold"/>
+                    <Label Grid.Column="1" Grid.Row="0" Content="Pret maxim" Foreground="#FF805820" FontSize="20" FontWeight="Bold"/>
+                    <TextBox Grid.Row="1" Grid.Column="0"  x:Name="textBoxpret1" Margin="20" FontSize="17"/>
+                    <TextBox Grid.Row="1" Grid.Column="1"  x:Name="textBoxpret2" Margin="20" FontSize="17"/>
+
+                </Grid>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Margin="15,20" Content="Sterge produs" FontSize="20" FontFamily="Arial" Background="#FF805820" 
+    Foreground="#FFEEECF3" Click="Button_Click" />
+            <Button Grid.Column="1" Margin="15,20" Content="Salveaza modificari" FontSize="20" FontFamily="Arial" Background="#FF805820" 
+     Foreground="#FFEEECF3" Click="Button_Click_1"/>
+            <Button Grid.Column="2" Margin="15,20" Content="Adauga produs" FontSize="20" FontFamily="Arial" Background="#FF805820" 
+    Foreground="#FFEEECF3" Click="Button_Click_3" />
+            <!--Button Grid.Column="3" Margin="15,20" Content="Anunta angajat" FontSize="20" FontFamily="Arial" Background="#FF805820" 
+Foreground="#FFEEECF3" Click="Button_Click_2" /-->
+        </Grid>
+        
+    </Grid>
+</Page>

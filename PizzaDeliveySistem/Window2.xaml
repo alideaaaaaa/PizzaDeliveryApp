@@ -1,0 +1,35 @@
+﻿<Window x:Class="PizzaDeliveySistem.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PizzaDeliveySistem"
+        mc:Ignorable="d"
+        Title="Window2" Height="201" Width="344">
+    <Grid Background="#FFE0C9A0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Content="Sunteti admin! Introduceti noua parola" Margin="15" FontFamily="Arial" 
+               FontSize="16" FontWeight="Bold" Foreground="#FF805810" />
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0" Margin="15" VerticalAlignment="Center" Content="Parola" FontFamily="Arial" 
+        FontSize="16" Foreground="#FF805810" FontWeight="Bold"/>
+            <TextBox Grid.Column="1" Margin="15" FontSize="16" Name="textBoxpassAdmin"/>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="1" Margin="15" Content="Salveaza"  FontSize="16" FontFamily="Arial" Background="#FF805820" 
+                        Foreground="#FFEEECF3" Click="Button_Click" />
+        </Grid>
+    </Grid>
+</Window>
